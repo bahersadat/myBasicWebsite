@@ -6,60 +6,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Website</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <h1>Basic Website</h1>
-        <p>It has a <b>flexible</b> layout.</p>
+        <div class="logo">
+            <h2>Abdullah's Car Dealership</h2>
+            <p>Your <b>Reliable</b> Dealer</p>
+        </div>
+        
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Inventory</a></li>
+                <li><a href="#">Finance</a></li>
+                <li><a href="#">About Us</a>
+                    <ul class="dropdown">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Review</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <!-- nav section -->
-    <section class="navbar">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contacts</a>
-                <ul class="dropdown">
-                    <li><a href="#">User a</a></li>
-                    <li><a href="#">User b</a></li>
-                    <li><a href="#">User c</a></li>
-                </ul>
-            </li>
-        </ul>
+    <!-- banner section -->
+    <section class="banner">
+        <img src="./resources/banner.jpg" alt="banner">
     </section>
     
     <!-- content section -->
     <section class="row">
 
         <div class="side">
-            <h2>About Me</h2>
-            <h5>Photo of me:</h5>
-            <div class="fakeimg me">Image</div>
-            <p>Some text about me. Lorem ipsum dolor sit amet...</p>
-            <h3>More Text</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <div class="fakeimg" style="height: 60px;">Image</div><br>
-            <div class="fakeimg" style="height: 60px;">Image</div><br>
-            <div class="fakeimg" style="height: 60px;">Image</div>
+            <h2>About my dealership</h2><br>
+            
+            <div class="fakeimg me">
+                <!-- <img src="./resources/myCarDealership.jpg" alt=""> -->
+            </div>
+            <p>A car dealership, or car dealer, is a business that sells new or used cars, at the retail level, based on a dealership contract with an automaker or its sales subsidiary. Car dealerships also often sell spare parts and automotive maintenance services.</p><br>
+            <h3>More from us</h3><br>
+            
+            <div class="fakeimg side1" style="height: 60px;"></div><br>
+            <div class="fakeimg side2" style="height: 60px;"></div><br>
+            <div class="fakeimg side3" style="height: 60px;"></div>
         </div>
         <main>
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Mar 4, 2023</h5>
-            <div class="fakeimg mainImg">Image</div>
-            <p>Some text..</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis nemo voluptates impedit ipsam sit ea perferendis quidem perspiciatis cumque nam vel quaerat quasi expedita cum laboriosam quod dignissimos, illum quis?</p><br>
-            <h2>TITLE HEADING</h2>
-            <h5>title descriptio, Mar 4, 2023</h5>
-            <div class="fakeimg mainImg">Image</div>
-            <p>Some text..</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, modi illum fugiat non ut, atque nulla vero, repellendus officiis quas natus? Sit magni, aut repudiandae soluta iusto perferendis facere repellendus.</p>
+            <h2>Ferrari</h2>
+            
+            <div class="fakeimg ferrari"></div>
+            <p>Ferrari S.p.A.</p>
+            <p>Ferrari S.p.A. is an Italian luxury sports car manufacturer based in Maranello, Italy. Founded by Enzo Ferrari (1898 to 1988) in 1939 from the Alfa Romeo racing division as Auto Avio Costruzioni, the company built its first car in 1940, and produced its first Ferrari-badged car in 1947.</p><br>
+            <h2>Lamborghini</h2>
+            
+            <div class="fakeimg lamborghini"></div>
+            <p>Lamborghini S.p.A</p>
+            <p>Automobili Lamborghini S.p.A. is an Italian manufacturer of luxury sports cars and SUVs based in Sant'Agata Bolognese. The company is owned by the Volkswagen Group through its subsidiary Audi.</p>
         </main>
 
     </section>
 
     <!-- footer -->
-    <footer>
-        <h2>Footer goes here</h2>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">new car</a></li>
+                        <li><a href="#">used car</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                       <a href="#"><i class="fab fa-facebook-f"></i></a>
+                       <a href="#"><i class="fab fa-twitter"></i></a>
+                       <a href="#"><i class="fab fa-instagram"></i></a>
+                       <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
 
